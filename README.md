@@ -46,30 +46,30 @@ Byte # |   Description   | Type
   01   | Thruster Status |  1 bit per thruster
   02   |    Pressure-1   |  Signed int (2 bytes), High order
   03   |    Pressure-2   |  Signed int (2 bytes), Low order
-  02   |      Temp-1     |  32-bit float, Highest order
-  03   |      Temp-2     |  32-bit float, High order
-  03   |      Temp-3     |  32-bit float, Low order
-  03   |      Temp-4     |  32-bit float, Lowest order
-  02   |     IMU A-1     |  Signed int (2 bytes), High order
-  03   |     IMU A-2     |  Signed int (2 bytes), Low order
-  04   |     IMU B-1     |  Signed int (2 bytes), High order
-  05   |     IMU B-2     |  Signed int (2 bytes), Low order
-  02   |     IMU C-1     |  Signed int (2 bytes), High order
-  03   |     IMU C-2     |  Signed int (2 bytes), Low order
-  02   |     IMU D-1     |  Signed int (2 bytes), High order
-  03   |     IMU D-2     |  Signed int (2 bytes), Low order
-  04   |     IMU E-1     |  Signed int (2 bytes), High order
-  05   |     IMU E-2     |  Signed int (2 bytes), Low order
-  04   |     IMU F-1     |  Signed int (2 bytes), High order
-  05   |     IMU F-2     |  Signed int (2 bytes), Low order
-  04   |     IMU G-1     |  Signed int (2 bytes), High order
-  05   |     IMU G-2     |  Signed int (2 bytes), Low order
-  04   |     IMU H-1     |  Signed int (2 bytes), High order
-  05   |     IMU H-2     |  Signed int (2 bytes), Low order
-  04   |     IMU I-1     |  Signed int (2 bytes), High order
-  05   |     IMU I-2     |  Signed int (2 bytes), Low order
-  19   |    CRC8 Check   | Use 0xD5 as polynomial 
-  20   |    Tail Byte    | 0x13 - 19 decimal  
+  04   |      Temp-1     |  32-bit float, Highest order
+  05   |      Temp-2     |  32-bit float, High order
+  06   |      Temp-3     |  32-bit float, Low order
+  07   |      Temp-4     |  32-bit float, Lowest order
+  08   |     IMU A-1     |  Signed int (2 bytes), High order
+  09   |     IMU A-2     |  Signed int (2 bytes), Low order
+  10   |     IMU B-1     |  Signed int (2 bytes), High order
+  11   |     IMU B-2     |  Signed int (2 bytes), Low order
+  12   |     IMU C-1     |  Signed int (2 bytes), High order
+  13   |     IMU C-2     |  Signed int (2 bytes), Low order
+  14   |     IMU D-1     |  Signed int (2 bytes), High order
+  15   |     IMU D-2     |  Signed int (2 bytes), Low order
+  16   |     IMU E-1     |  Signed int (2 bytes), High order
+  17   |     IMU E-2     |  Signed int (2 bytes), Low order
+  18   |     IMU F-1     |  Signed int (2 bytes), High order
+  19   |     IMU F-2     |  Signed int (2 bytes), Low order
+  20   |     IMU G-1     |  Signed int (2 bytes), High order
+  21   |     IMU G-2     |  Signed int (2 bytes), Low order
+  22   |     IMU H-1     |  Signed int (2 bytes), High order
+  23   |     IMU H-2     |  Signed int (2 bytes), Low order
+  24   |     IMU I-1     |  Signed int (2 bytes), High order
+  25   |     IMU I-2     |  Signed int (2 bytes), Low order
+  26   |    CRC8 Check   | Use 0xD5 as polynomial 
+  27   |    Tail Byte    | 0x13 - 19 decimal  
   
   
 C :: CRC-8 Checksum Code
