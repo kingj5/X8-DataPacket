@@ -24,4 +24,4 @@ Byte # |   Description   | Type
   04   |     Pitch-2     |  Signed int (2 bytes), Low order
   05   |      Yaw-1      |	Signed int (2 bytes), High order
   06   |      Yaw-2      |  Signed int (2 bytes), Low order
-  07   |       N/A       |  Empty
+  07   |   PID Control   |  1 byte - bool for pid / manual control
