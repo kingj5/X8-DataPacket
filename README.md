@@ -37,6 +37,39 @@ Byte # |   Description  | Type
   29   |   Tail Byte    | 0x13 - 19 decimal  
   
 Always set command to 0x01. In the future, there will be further options to program options are ask for certain data using this byte, but nothing is set yet.  
+
+Main Micro -> Battlestation Packet
+----------------------------------
+Byte # |   Description   | Type
+-------|-----------------|-------------------
+  00   |      Header     |  0x12 - 18 decimal
+  01   | Thruster Status |  1 bit per thruster
+  02   |    Pressure-1   |  Signed int (2 bytes), High order
+  03   |    Pressure-2   |  Signed int (2 bytes), Low order
+  02   |      Temp-1     |  32-bit float, Highest order
+  03   |      Temp-2     |  32-bit float, High order
+  03   |      Temp-3     |  32-bit float, Low order
+  03   |      Temp-4     |  32-bit float, Lowest order
+  02   |     IMU A-1     |  Signed int (2 bytes), High order
+  03   |     IMU A-2     |  Signed int (2 bytes), Low order
+  04   |     IMU B-1     |  Signed int (2 bytes), High order
+  05   |     IMU B-2     |  Signed int (2 bytes), Low order
+  02   |     IMU C-1     |  Signed int (2 bytes), High order
+  03   |     IMU C-2     |  Signed int (2 bytes), Low order
+  02   |     IMU D-1     |  Signed int (2 bytes), High order
+  03   |     IMU D-2     |  Signed int (2 bytes), Low order
+  04   |     IMU E-1     |  Signed int (2 bytes), High order
+  05   |     IMU E-2     |  Signed int (2 bytes), Low order
+  04   |     IMU F-1     |  Signed int (2 bytes), High order
+  05   |     IMU F-2     |  Signed int (2 bytes), Low order
+  04   |     IMU G-1     |  Signed int (2 bytes), High order
+  05   |     IMU G-2     |  Signed int (2 bytes), Low order
+  04   |     IMU H-1     |  Signed int (2 bytes), High order
+  05   |     IMU H-2     |  Signed int (2 bytes), Low order
+  04   |     IMU I-1     |  Signed int (2 bytes), High order
+  05   |     IMU I-2     |  Signed int (2 bytes), Low order
+  19   |    CRC8 Check   | Use 0xD5 as polynomial 
+  20   |    Tail Byte    | 0x13 - 19 decimal  
   
   
 C :: CRC-8 Checksum Code
