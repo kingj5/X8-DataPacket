@@ -41,4 +41,7 @@ Byte # |  Description  | Type
   
 Reassigning motor methodology:
 The 8 motors are each represented by 3 bits spread among 3 bytes.  To retrieve the values of the motors to be reassigned, the following code is used:
+
+```c
 val = 4 * (high && 1 << i) + 2 * (mid && 1 << i) + (low && 1 << i);
+```
